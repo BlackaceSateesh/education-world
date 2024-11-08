@@ -1,0 +1,37 @@
+.Header {
+  width: 100%;
+  padding: 2rem 0;
+}
+.Header .inner-section{
+    display: flex;
+    justify-content: space-between;
+}
+.Header .left-wrapper {
+  display: flex;
+  gap: 3rem;
+}
+.Header .left-wrapper .app-logo {
+  min-width: 14.7rem;
+  width: 14.7rem;
+}
+.Header .left-wrapper ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.Header .left-wrapper ul li {
+  font-family: var(--ff-roboto);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: -0.17000000178813934px;
+}
+
+.Header .left-wrapper ul li a{
+    color: var(--black);
+}
+.Header .right-wrapper{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}

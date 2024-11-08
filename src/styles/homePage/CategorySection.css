@@ -1,0 +1,119 @@
+.CategorySection .card-wrapper {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 0 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+  column-gap: 1%;
+}
+.CategorySection .card-wrapper .CategoryCard {
+  min-width: 32.66%;
+  width: 32.66%;
+}
+.CategorySection .card-wrapper .CategoryCard .card-img {
+  width: 90%;
+  position: relative;
+}
+.CategorySection .card-wrapper .CategoryCard .card-img img {
+  /* border: 0.92px solid #0000004d; */
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.CategorySection .card-wrapper .CategoryCard .card-img .highlight-wrapper {
+  position: absolute;
+  right: -5rem;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.CategorySection
+  .card-wrapper
+  .CategoryCard
+  .card-img
+  .highlight-wrapper
+  .card1 {
+  box-shadow: 0px 23.06px 36.9px 0px #0000003d;
+  background-color: var(--white);
+  border-radius: 1.3rem;
+  padding: 1.5rem;
+  font-family: var(--ff-plus-jakarta);
+  font-size: 1.845rem;
+  font-weight: 500;
+  line-height: 2.57rem;
+  letter-spacing: -0.5949244499206543px;
+  color: #1f3152;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+.CategorySection
+  .card-wrapper
+  .CategoryCard
+  .card-img
+  .highlight-wrapper
+  .card1
+  span {
+  color: #ffc444;
+  font-weight: 700;
+}
+.CategorySection
+  .card-wrapper
+  .CategoryCard
+  .card-img
+  .highlight-wrapper
+  .card1
+  span
+  b {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.CategorySection
+  .card-wrapper
+  .CategoryCard
+  .card-img
+  .highlight-wrapper
+  .card1
+  .icon {
+  min-width: 7.84rem;
+  width: 7.84rem;
+  height: 7.38rem;
+  background-color: #1f3152;
+  color: var(--white);
+  font-size: 1.8rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5rem;
+  right: -4rem;
+}
+.CategorySection
+  .card-wrapper
+  .CategoryCard
+  .card-img
+  .highlight-wrapper
+  .card1
+  .icon
+  svg {
+  margin-left: 14px;
+  margin-top: 4px;
+}
+.CategorySection .card-wrapper .CategoryCard .content h5 {
+  font-family: var(--ff-plus-jakarta);
+  font-size: 3.52rem;
+  font-weight: 500;
+  line-height: 4.6rem;
+  letter-spacing: -1.0627282857894897px;
+  color: var(--black);
+}
+.CategorySection .card-wrapper .CategoryCard .content p {
+  font-family: var(--ff-roboto);
+  font-size: 1.19rem;
+  font-weight: 400;
+  line-height: 1.39rem;
+  letter-spacing: 1.8450144529342651px;
+  color: var(--black);
+  margin-top: 0.6rem;
+}

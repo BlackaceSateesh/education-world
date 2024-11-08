@@ -1,0 +1,43 @@
+.FaqSection .inner-wrapper .accordion {
+  border: none;
+  width: 60%;
+  margin: 0 auto;
+}
+.FaqSection .inner-wrapper .accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #00000014;
+  padding: 2rem 4rem;
+}
+.FaqSection .inner-wrapper .accordion-button {
+  font-family: var(--ff-plus-jakarta);
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+  letter-spacing: -0.8399999737739563px;
+  color: var(--black);
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+}
+.FaqSection .inner-wrapper .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.FaqSection .inner-wrapper .accordion-button::after {
+  display: none;
+}
+
+.FaqSection .inner-wrapper .accordion .accordion-item.show {
+  box-shadow: 0px 40px 35px 0px #00000016;
+  border-radius: 2rem;
+  z-index: 9;
+  position: relative;
+}
+
+.FaqSection .inner-wrapper .accordion .accordion-body{
+    font-family: var(--ff-plus-jakarta);
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 100;
+    color: var(--black);
+}

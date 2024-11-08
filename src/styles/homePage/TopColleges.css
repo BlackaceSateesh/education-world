@@ -1,0 +1,73 @@
+.TopColleges .card-wrapper {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 0 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  column-gap: 4%;
+}
+.TopColleges .card-wrapper .TopCollegsCard {
+  min-width: 30.5%;
+  width: 30.5%;
+  height: 49.8rem;
+  border-radius: 1.8rem;
+  overflow: hidden;
+  padding: 3rem 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.TopColleges .card-wrapper .TopCollegsCard .tag {
+  font-family: var(--ff-poppins);
+  font-size: 1.256rem;
+  font-weight: 700;
+  line-height: 1.67rem;
+  background: #3dcbb1;
+  padding: 0.49rem;
+  border-radius: 0.209rem;
+  color: var(--white);
+  width: fit-content;
+}
+.TopColleges .card-wrapper .TopCollegsCard p.add {
+  font-family: var(--ff-poppins);
+  font-size: 2.93rem;
+  font-weight: 500;
+  line-height: 3.14rem;
+  color: #f9f9f9e5;
+}
+.TopColleges .card-wrapper .TopCollegsCard h5.name {
+  font-family: var(--ff-poppins);
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 4.39rem;
+  color: var(--white);
+}
+.TopColleges .card-wrapper .TopCollegsCard .detail {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  color: var(--white);
+  font-weight: 400;
+}
+.TopColleges .card-wrapper .TopCollegsCard .detail b {
+  font-weight: 600;
+}
+.TopColleges .card-wrapper .TopCollegsCard .applyBtn {
+  border: 1.05px solid #233871;
+  font-family: var(--fontfamilyFont1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 25.11px;
+  text-align: center;
+  background-color: var(--white);
+  width: 60%;
+  padding: 1rem;
+  color: #233871;
+  margin-top: 1rem;
+}

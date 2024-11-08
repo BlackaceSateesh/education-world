@@ -1,0 +1,91 @@
+.GlobalInstitute {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 8rem;
+}
+.GlobalInstitute .left-wrapper {
+  width: 65%;
+}
+.GlobalInstitute .left-wrapper .bg-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.GlobalInstitute .right-wrapper {
+    width: 45%;
+    height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.GlobalInstitute .right-wrapper .tag {
+  background-color: #e8fdf1;
+  font-family: var(--ff-inter);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.45rem;
+  color: #1f6142;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3rem;
+}
+.GlobalInstitute .right-wrapper .SectionHeading {
+  margin: 2rem 0;
+}
+.GlobalInstitute .right-wrapper .SectionHeading h6 {
+  text-align: left;
+}
+.GlobalInstitute .right-wrapper .para {
+  font-size: 2.1rem;
+  font-family: var(--ff-heebo);
+  font-weight: 100;
+  line-height: 3.15rem;
+  letter-spacing: -0.17000000178813934px;
+  color: var(--black);
+}
+.GlobalInstitute .right-wrapper .btm {
+  width: 100%;
+}
+.GlobalInstitute .right-wrapper .btm .review-card {
+  box-shadow: 0px 4px 7px 2px #0000000d;
+  border-radius: 2rem;
+  padding: 4rem;
+  margin-top: 5rem;
+}
+.GlobalInstitute .right-wrapper .btm .review-card p.para {
+  font-family: var(--ff-heebo);
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+}
+.GlobalInstitute .right-wrapper .btm .review-card .details {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+.GlobalInstitute .right-wrapper .btm .review-card .details .pic {
+  box-shadow: 0px 15px 37px 0px #00000026;
+  min-width: 5.2rem;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.GlobalInstitute .right-wrapper .btm .review-card .details h5.name {
+  font-family: var(--ff-heebo);
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 2.2rem;
+  color: var(--black);
+}
+.GlobalInstitute .right-wrapper .btm .review-card .details p.sub {
+  font-family: var(--ff-heebo);
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.4rem;
+  color: var(--black);
+  margin-top: 0.6rem;
+}

@@ -1,0 +1,67 @@
+.RegisterApply .inner-section {
+  width: 74%;
+  margin: 0 auto;
+}
+.RegisterApply .inner-section .SectionHeading h6 {
+  text-align: left;
+}
+.RegisterApply .inner-section .SectionHeading {
+  margin-bottom: 1rem;
+}
+.RegisterApply .inner-section .inner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.RegisterApply .inner-section .inner-wrapper .left-wrapper {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.RegisterApply .inner-section .inner-wrapper .left-wrapper .w50 {
+  width: 100%;
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 2%;
+}
+.RegisterApply .inner-section .inner-wrapper .left-wrapper .condition {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.RegisterApply .inner-section .inner-wrapper .left-wrapper .condition label {
+  font-family: var(--ff-poppins);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  letter-spacing: 0.25px;
+  color: var(--black);
+}
+.RegisterApply .inner-section .inner-wrapper .left-wrapper .condition label a {
+  text-decoration: underline;
+  color: var(--black);
+}
+.RegisterApply .inner-section .inner-wrapper .left-wrapper .ButtonMain.submit {
+  box-shadow: 0px 0px 20px 0px #0000004d;
+  background-color: #1f3152;
+  color: var(--white);
+  flex-direction: row-reverse;
+}
+.RegisterApply .inner-section p.already {
+    text-align: center;
+    font-family: var(--ff-plus-jakarta);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3.15rem;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    margin-top: 4rem;
+}
+.RegisterApply .inner-section p.already a{
+    font-weight: 400;
+    color: var(--black);
+}
+.RegisterApply .inner-section .inner-wrapper .right-wrapper {
+  width: 50%;
+}
