@@ -65,3 +65,29 @@
 .RegisterApply .inner-section .inner-wrapper .right-wrapper {
   width: 50%;
 }
+
+
+@media (max-width:799px) {
+  .RegisterApply .inner-section .SectionHeading{
+    margin-bottom: 3rem;
+  }
+  .RegisterApply .inner-section .SectionHeading h6{
+    text-align: center;
+  }
+  .RegisterApply .inner-section{
+    width: 92%;
+  }
+  .RegisterApply .inner-section .inner-wrapper{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .RegisterApply .inner-section .inner-wrapper .left-wrapper,
+  .RegisterApply .inner-section .inner-wrapper .right-wrapper{
+    width: 100%;
+  }
+  .RegisterApply .inner-section p.already{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+  
+}

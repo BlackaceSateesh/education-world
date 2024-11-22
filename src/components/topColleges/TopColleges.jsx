@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import chandigarhImg from "../../assets/top-college-university/chandigarh.png";
 import chennaiImg from "../../assets/top-college-university/chennai.png";
 import gujratImg from "../../assets/top-college-university/gujrat.png";
@@ -7,7 +8,7 @@ import roorkeeImg from "../../assets/top-college-university/roorkee.png";
 import TopCollegsCard from "./TopCollegsCard";
 import "../../styles/homePage/TopColleges.css";
 
-const TopColleges = () => {
+const TopColleges = ({ id }) => {
   const data = [
     {
       add: "Chennai, Tamil Nadu | AICTE",
@@ -72,7 +73,7 @@ const TopColleges = () => {
   ];
   return (
     <>
-      <div className="TopColleges">
+      <div id={id ? id : ""} className="TopColleges">
         <div className="inner-section">
           <div className="SectionHeading">
             <h6>

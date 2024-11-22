@@ -71,3 +71,14 @@
   color: #233871;
   margin-top: 1rem;
 }
+
+
+@media (max-width:599px) {
+  .TopColleges .card-wrapper .TopCollegsCard{
+    min-width: 100%;
+    width: 100%;
+  }
+  .TopColleges .card-wrapper{
+    padding: 0 2rem;
+  }
+}

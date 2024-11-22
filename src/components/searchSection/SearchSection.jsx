@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import { IoSearch } from "react-icons/io5";
 import "../../styles/homePage/SearchSection.css";
 import searchPng from "../../assets/searchPng.png";
 import bannerPng from "../../assets/studentBookPng.png";
 import birdGif from "../../assets/birdGIF.png";
 
-const SearchSection = () => {
+const SearchSection = ({ clsName }) => {
   const searchTags = [
     "B.Tech",
     "M.Tech",
@@ -19,7 +20,7 @@ const SearchSection = () => {
   ];
   return (
     <>
-      <div className="SearchSection">
+      <div className={`SearchSection ${clsName ? clsName : ""}`}>
         <div className="searchPng">
           <img src={searchPng} alt="searchPng" />
         </div>

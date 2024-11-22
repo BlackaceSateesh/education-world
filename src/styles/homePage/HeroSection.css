@@ -31,6 +31,7 @@
   letter-spacing: -2.880000114440918px;
   color: var(--white);
   text-wrap: nowrap;
+  user-select: none;
 }
 .HeroSection .inner-section .top-inner .left-wrapper .title span:hover {
   /* box-shadow: 0px 0px 10px 0px #00000040; */
@@ -101,24 +102,60 @@
   text-align: center;
   text-wrap: nowrap;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 #ccc,
-  0 2px 0 #1F3152D4,
-  0 8px 0 #1F3152D4,
-  0 4px 0 #1F3152D4,
-  0 5px 0 #1F3152D4,
-  0 6px 1px rgba(0,0,0,.1),
-  0 0 5px rgba(0,0,0,.1),
-  0 1px 3px rgba(0,0,0,.3),
-  0 3px 5px rgba(0,0,0,.2),
-  0 5px 10px rgba(0,0,0,.25),
-  0 10px 10px rgba(0,0,0,.2),
-  0 20px 20px rgba(0,0,0,.15);
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #1f3152d4, 0 8px 0 #1f3152d4,
+    0 4px 0 #1f3152d4, 0 5px 0 #1f3152d4, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
   z-index: 3;
 }
 
-@media (max-width:1599px) {
-  .HeroSection .inner-section .btm-inner{
+@media (max-width: 1599px) {
+  .HeroSection .inner-section .btm-inner {
     font-size: 8.4rem;
   }
-  
+}
+
+@media (max-width: 799px) {
+  .HeroSection .inner-section .btm-inner {
+    font-size: 2rem;
+    bottom: -4.6rem;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #1f3152d4, 0 4px 0 #1f3152d4,
+      0 4px 0 #1f3152d4, 0 5px 0 #1f3152d4, 0 6px 1px rgba(0, 0, 0, 0.1),
+      0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+      0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+  .TopCollegeCourse .tab-wrapper .top-course-Tab,
+  .HeroSection .inner-section .top-inner {
+    flex-direction: column;
+  }
+  .HeroSection .inner-section .top-inner {
+    padding: 4rem;
+  }
+  .HeroSection .inner-section .top-inner .left-wrapper .title {
+    font-size: 10rem;
+    line-height: 14rem;
+  }
+  .HeroSection .inner-section .top-inner .left-wrapper .subtitle {
+    font-size: 3rem;
+    line-height: 4.56rem;
+    letter-spacing: -0.280000114440918px;
+  }
+  .HeroSection .inner-section .top-inner .left-wrapper,
+  .HeroSection .inner-section .top-inner .right-wrapper {
+    width: 100%;
+  }
+  .HeroSection .inner-section .top-inner .right-wrapper {
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-top: 2rem;
+  }
+  .HeroSection .inner-section .top-inner .right-wrapper .right-para {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+  .HeroSection .inner-section {
+    min-height: fit-content;
+  }
 }

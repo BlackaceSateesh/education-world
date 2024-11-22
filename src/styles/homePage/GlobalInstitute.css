@@ -89,3 +89,15 @@
   color: var(--black);
   margin-top: 0.6rem;
 }
+
+
+@media (max-width:799px) {
+  .GlobalInstitute{
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .GlobalInstitute .left-wrapper,
+  .GlobalInstitute .right-wrapper{
+    width: 100%;
+  }
+}

@@ -51,134 +51,7 @@
   scroll-behavior: smooth;
   padding: 0.8rem;
 }
-.TopCoursesSlider .right-wrapper .slider-wrapper .TopCourseCard {
-  min-width: 40.4rem;
-  width: 40.4rem;
-  box-shadow: 0px 0px 4px 0px #00000040;
-  border-radius: 2rem;
-  overflow: hidden;
-  position: relative;
-}
-.TopCoursesSlider .right-wrapper .slider-wrapper .TopCourseCard .top {
-  background-color: #1f3152;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  justify-content: center;
-  padding: 1.2rem 0;
-}
-.TopCoursesSlider .right-wrapper .slider-wrapper .TopCourseCard .top .logo {
-  min-width: 6.38rem;
-  width: 6.38rem;
-}
-.TopCoursesSlider .right-wrapper .slider-wrapper .TopCourseCard .top h5.name {
-  color: var(--white);
-  font-family: var(--ff-plus-jakarta);
-  font-size: 3.7rem;
-  font-weight: 600;
-  line-height: 4.8rem;
-}
-.TopCoursesSlider .right-wrapper .slider-wrapper .TopCourseCard .center {
-  padding: 1.4rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.TopCoursesSlider
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .center
-  .keyValues {
-  width: 100%;
-  display: flex;
-}
-.TopCoursesSlider
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .center
-  .keyValues
-  .key {
-  width: 100%;
-}
-.TopCoursesSlider
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .center
-  .keyValues
-  .value {
-  width: 40%;
-}
-.TopCoursesSlider
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .center
-  .keyValues
-  .key,
-.TopCoursesSlider
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .center
-  .keyValues
-  .value {
-  text-wrap: nowrap;
-  font-family: var(--ff-plus-jakarta);
-  font-size: 1.624rem;
-  font-weight: 600;
-  line-height: 2.32rem;
-}
-.TopCoursesSlider
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .center
-  .keyValues
-  .value {
-  text-align: right;
-}
-.TopCoursesSlider.even
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .center
-  .keyValues:nth-child(1)
-  .value,
-.TopCoursesSlider.even
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .center
-  .keyValues:nth-child(2)
-  .value {
-  color: #099250;
-}
-.TopCoursesSlider .right-wrapper .slider-wrapper .TopCourseCard .btm {
-  padding: 1.4rem;
-  width: 100%;
-}
-.TopCoursesSlider
-  .right-wrapper
-  .slider-wrapper
-  .TopCourseCard
-  .btm
-  .keyValues {
-  padding: 1.2rem 0;
-  border-top: 1.5px solid #0000001a;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: var(--ff-plus-jakarta);
-  font-size: 2.32rem;
-  font-weight: 500;
-  line-height: 2.92rem;
-  color: var(--black);
-}
+
 .TopCoursesSlider .right-wrapper .slider-navigation {
   width: 100%;
   display: flex;
@@ -189,4 +62,47 @@
 .TopCoursesSlider .right-wrapper .slider-navigation button {
   color: #1f3152e5;
   font-size: 2rem;
+}
+
+@media (max-width: 799px) {
+  .TopCoursesSlider.even,
+  .TopCoursesSlider {
+    flex-direction: column;
+  }
+  .TopCoursesSlider {
+    margin-top: 0;
+    padding: 0 2rem;
+  }
+  .TopCoursesSlider .left-wrapper {
+    width: 100%;
+    padding-left: 0;
+  }
+  .TopCoursesSlider.even .left-wrapper{
+    padding-right: 0;
+  }
+  .TopCoursesSlider .right-wrapper {
+    width: 100%;
+  }
+  .TopCourseCard {
+    min-width: 33.4rem;
+    width: 33.4rem;
+  }
+  .TopCourseCard .top h5.name {
+    font-size: 2rem;
+  }
+  .TopCourseCard .top .logo {
+    min-width: 5rem;
+    width: 5rem;
+  }
+  .TopCourseCard .btm .keyValues {
+    font-size: 1.8rem;
+  }
+  .TopCoursesSlider .left-wrapper .SectionHeading {
+    margin-top: 1rem;
+  }
+  .TopCoursesSlider .left-wrapper .SectionHeading h6 {
+    font-size: 4rem;
+    line-height: 4.56rem;
+    text-align: center;
+  }
 }

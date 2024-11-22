@@ -49,7 +49,7 @@ const BlogSection = () => {
   return (
     <>
       <div className="BlogSection">
-        <div className="top-container">
+        <div className="top-container" style={{ backgroundImage: `url(${''})` }}>
           <div className="logos-wrapper">
             {logoData?.map((e, i) => {
               return (

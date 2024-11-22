@@ -20,7 +20,7 @@ const HeroSection = () => {
         <div className="inner-section">
           <div className="top-inner">
             <div className="left-wrapper">
-              <h6 className="subtitle">Find Over Collages</h6>
+              <h6 className="subtitle">Find Over Colleges</h6>
               <h1 className="title">
                 in <span>In</span>
                 <span>di</span>

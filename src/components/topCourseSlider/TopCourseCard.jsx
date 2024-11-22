@@ -1,11 +1,16 @@
 import { FaArrowRight } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthenticatedRoutes } from "../../constants/Routes";
 
 /* eslint-disable react/prop-types */
 const TopCourseCard = ({ data }) => {
+  const navigate = useNavigate();
+  const navigateDetail = ()=>{
+    navigate(AuthenticatedRoutes.COURSE_DETAILS)
+  }
   return (
     <>
-      <div className="TopCourseCard">
+      <div onClick={navigateDetail} className="TopCourseCard">
         <div className="top">
           {data?.logo && (
             <div className="logo">

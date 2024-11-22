@@ -46,3 +46,9 @@ body {
     font-size: 54%;
   }
 }
+@media (max-width: 799px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+}

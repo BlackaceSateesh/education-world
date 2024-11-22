@@ -161,3 +161,52 @@
   color: var(--black);
   text-wrap: nowrap;
 }
+
+@media (max-width: 799px) {
+  .Footer .copyright {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Footer .inner-section .footer-links {
+    flex-wrap: wrap;
+  }
+  .Footer .inner-section .footer-links .card-wrapper.details {
+    width: 100%;
+  }
+  .Footer .inner-section .footer-links .card-wrapper {
+    width: 48%;
+  }
+  .Footer .inner-section .footer-links .card-wrapper ul li {
+    margin-top: 1rem;
+  }
+  .Footer .inner-section .subscription {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 1.2rem;
+  }
+  .Footer .inner-section .subscription h5 {
+    font-size: 3.84rem;
+    line-height: 4.6rem;
+  }
+  .Footer .inner-section .subscription p {
+    width: 100%;
+    font-size: 1.89rem;
+    line-height: 2.6rem;
+  }
+  .Footer .inner-section .subscription .msg-wrapper{
+    width: 100%;
+  }
+  .Footer .inner-section .subscription .msg-wrapper input{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .Footer .inner-section .subscription .msg-wrapper button {
+    padding: 1.2rem;
+    font-size: 1.37rem;
+    line-height: 1.77rem;
+  }
+  .Footer .copyright ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

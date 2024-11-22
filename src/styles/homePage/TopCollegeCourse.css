@@ -98,7 +98,7 @@
 }
 .TopContent .inner-body .content-card .top-header .left .name .icon {
   position: relative;
-  height: 4.5rem;
+  width: 4.5rem;
 }
 .TopContent .inner-body .content-card .top-header .left .name .icon span {
   position: absolute;
@@ -438,46 +438,104 @@
   background-color: #1f3152;
   color: var(--white);
 }
-.TopContent .tab-content .table-wrapper,
-.TopContent .tab-content .table-wrapper table {
-  width: 100%;
-}
-.TopContent .tab-content .table-wrapper {
-  display: flex;
-  gap: 2rem;
-}
-.TopContent .tab-content .table-wrapper table.w50 {
-  width: 50%;
-}
-.TopContent .tab-content .table-wrapper table.bdr,
-.TopContent .tab-content .table-wrapper table.bdr th,
-.TopContent .tab-content .table-wrapper table.bdr td {
-  border: 0.9px solid #ccdcff;
-  border-collapse: collapse;
+
+@media (max-width: 799px) {
+  .TopContent .inner-body .content-card .top-header .left .name,
+  .TopContent .inner-body .content-card .insight-wrapper .card-wrapper {
+    flex-wrap: wrap;
+  }
+  .TopContent .inner-body .content-card .top-header {
+    flex-direction: column;
+  }
+  .TopContent .inner-body .content-card .top-header .left {
+    width: 100%;
+  }
+  .TopContent .inner-body .eligibility {
+    flex-direction: column;
+  }
+  .TopContent .inner-body .content-card .insight-wrapper .card-wrapper .card1 {
+    width: 48%;
+  }
+
+  .top-course-Tab .content-pannel,
+  .TopContent .inner-body .content-card .top-header .left .name h6 {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .top-course-Tab .content-pannel .nav-pills {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    text-wrap: nowrap;
+  }
+  .top-course-Tab .content-pannel .nav-item a.nav-link.active {
+    border-radius: 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  .top-course-Tab .content-wrapper {
+    padding: 1rem;
+    border-radius: 0;
+  }
+  .TopContent .heading {
+    margin: 2rem 0;
+  }
+  .TopContent .inner-body .content-card .top-header .left .review {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .TopContent .inner-body .content-card .top-header .left .review span::before {
+    display: none;
+  }
+  .TopContent .inner-body .content-card .top-header .viewBtn {
+    margin: 1.2rem 0;
+  }
+  .TopContent .inner-body .content-card .insight-wrapper .card-wrapper {
+    row-gap: 1.2rem;
+  }
+  .TopContent .inner-body .eligibility .left {
+    width: 100%;
+  }
+  .TopContent .inner-body .eligibility .right {
+    justify-content: center;
+  }
+  .TopContent .view-details .accordion-button {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+  .TopContent .view-details .detail-card {
+    flex-direction: column;
+  }
+  .TopContent .view-details .detail-card .card-img {
+    min-width: 100%;
+    width: 100%;
+  }
+  .TopContent .view-details .accordion-body{
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .TopContent .details-tab .detail-pannel .ButtonMain{
+    display: none;
+  }
+  .TopContent .detail-pannel .nav-pills,
+  .TopContent .detail-pannel .nav-item{
+    width: 100%;
+  }
+
 }
 
-.TopContent .tab-content .table-wrapper table thead th {
-  padding: 1rem;
-  background-color: #1f3152;
-  color: var(--white);
-  font-family: var(--ff-arial);
-  font-size: 1.44rem;
-  font-weight: 700;
-  line-height: 2.1rem;
-  text-align: left;
-  text-wrap: nowrap;
-}
-.TopContent .tab-content .table-wrapper table tbody td {
-  padding: 1rem;
-  font-family: var(--ff-plus-jakarta);
-  font-size: 1.35rem;
-  font-weight: 400;
-  line-height: 2.1rem;
-  color: #4d5156;
-}
-.TopContent .tab-content .table-wrapper table tbody tr {
-  border-bottom: 0.9px solid #ccdcff;
-}
-.TopContent .tab-content .table-wrapper table tbody tr:last-child{
-    border-bottom: none;
+@media (max-width: 599px) {
+  .TopContent .inner-body .content-card .insight-wrapper .card-wrapper .card1 {
+    width: 100%;
+  }
+  .TopContent .inner-body .eligibility .left {
+    width: 100%;
+    flex-direction: column;
+  }
+
 }

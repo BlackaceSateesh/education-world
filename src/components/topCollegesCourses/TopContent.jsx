@@ -12,9 +12,19 @@ import {
 import { Accordion, Nav, Tab } from "react-bootstrap";
 import { useState } from "react";
 import { IoArrowForwardOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthenticatedRoutes } from "../../constants/Routes";
 const TopContent = () => {
   const [activeKey, setActiveKey] = useState(null);
+
+  const navigate = useNavigate();
+  const navigateDetail=()=>{
+    navigate(AuthenticatedRoutes.DETAIL_PAGE,{
+      state:{
+         data:''
+      }
+     });
+  }
 
   const handleSelect = (key) => {
     setActiveKey(key === activeKey ? null : key);
@@ -45,7 +55,7 @@ const TopContent = () => {
                   <span>Full Time</span>
                 </div>
               </div>
-              <button className="viewBtn">View College</button>
+              <button onClick={navigateDetail} className="viewBtn">View College</button>
             </div>
             {/* insight */}
             <div className="insight-wrapper">

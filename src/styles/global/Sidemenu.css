@@ -1,0 +1,101 @@
+.SidemenuInner {
+  min-width: 28.9rem;
+  width: 16.3%;
+  padding: 0 2rem;
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #00000012
+}
+.SidemenuInner .header-wrapper {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+}
+.SidemenuInner .app-logo {
+  min-width: 19.1rem;
+  width: 19.1rem;
+}
+.SidemenuInner .nav-lists {
+  height: auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.SidemenuInner .nav-lists .nav {
+  display: flex;
+  flex-direction: column;
+}
+.SidemenuInner .nav-link {
+  font-family: var(--ff-plus-jakarta);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  text-align: left;
+  color: var(--black);
+  padding: 1rem 1.2rem;
+  display: block;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+.SidemenuInner .nav-link.active {
+  width: 100%;
+  background-color: #1f3152;
+  color: var(--white);
+}
+.SidemenuInner .footer-wrapper {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+}
+.SidemenuInner .footer-wrapper .social-lists ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.SidemenuInner .footer-wrapper .social-lists ul a {
+  font-size: 2rem;
+  color: var(--black);
+}
+.SidemenuInner .footer-wrapper .user-wrapper {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+.SidemenuInner .footer-wrapper .user-wrapper .userPic {
+  min-width: 5.529rem;
+  width: 5.529rem;
+  height: 5.529rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.SidemenuInner .footer-wrapper .user-wrapper .userPic img {
+  height: 100%;
+  object-fit: cover;
+}
+.SidemenuInner .footer-wrapper .user-wrapper .userPic .txt .name {
+  font-family: var(--ff-inter);
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #363a44;
+}
+.SidemenuInner .footer-wrapper .user-wrapper .txt .cnt {
+  font-family: var(--ff-inter);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-align: left;
+  color: #565E73;
+}

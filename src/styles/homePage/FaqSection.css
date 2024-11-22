@@ -41,3 +41,29 @@
     font-weight: 100;
     color: var(--black);
 }
+
+@media (max-width:799px) {
+  .FaqSection .inner-wrapper{
+    padding: 0 2rem;
+  }
+  .FaqSection .SectionHeading{
+    margin-top: 0;
+  }
+  .FaqSection .inner-wrapper .accordion{
+    width: 100%;
+  }
+  .FaqSection .inner-wrapper .accordion .accordion-item {
+    padding: 2rem;
+  }
+  .FaqSection .inner-wrapper .accordion-button {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding: 1.2rem 0;
+  }
+  .FaqSection .inner-wrapper .accordion .accordion-body {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    padding: 1.2rem 0;
+  }
+  
+}
